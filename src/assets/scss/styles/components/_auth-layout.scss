@@ -1,0 +1,31 @@
+.auth_layout {
+    height: 100vh;
+    width: 100vw;
+    background: url('/images/bg.jpg');
+    background-size: cover;
+
+    .auth_layout_content{
+        flex-direction: column;
+        height: inherit;
+        width: inherit;
+        overflow-y: auto;
+        background-color: rgba($primary, 0.7);
+
+        .auth_img_box {
+            width: 6.5rem;
+            min-height: 6.5rem;
+            max-height: 40vh;
+            border-radius: 50%;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+
+            .icon_check {
+                font-size: $font-size + 20px !important;
+                color: $primary;
+            }
+        }
+
+        .auth_layout_content {
+            flex: 1;
+        }
+    }
+}

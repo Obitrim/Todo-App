@@ -1,0 +1,26 @@
+.bottom_navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+
+    .bottom_nav_item {
+        flex: 2;
+        border: none !important;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:first-child {
+            flex: 1 !important;
+        }
+
+        .icon {
+            font-size: $font-size + 4px;
+            pointer-events: none;
+        }
+    }
+
+}

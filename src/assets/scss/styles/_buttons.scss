@@ -1,0 +1,21 @@
+.btn_create_category {
+    background: $primary;
+    color: #fff;
+    transition: 0.25s;
+
+    &:hover {
+        background: inherit;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+.dash_btn {
+    border: 1px dashed $primary;
+    color: $primary !important;
+    background: $light-grey;
+}
+
+.btn_create {
+    background-color: $primary;
+}

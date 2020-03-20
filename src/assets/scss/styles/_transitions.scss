@@ -1,0 +1,50 @@
+.fade-enter-active,
+.fade-leave-active {
+    animation: fade-in 0.25s;
+}
+
+.fade-leave-active {
+    animation-direction: reverse;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+    animation: slide-up 0.25s;
+}
+
+.slide-up-leave-active {
+    animation-direction: reverse;
+}
+
+.slide-right-enter-active
+{
+    animation: slide-right 0.25s;
+    -moz-animation-delay: 0.05s;
+    -o-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+}
+
+.slide-right-leave-active {
+    animation: fade-in 0.05s;
+    animation-direction: reverse;
+}
+
+@keyframes fade-in {
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@keyframes slide-up {
+    0% { bottom: -4rem; }
+    100% { bottom: 0; }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-2rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
