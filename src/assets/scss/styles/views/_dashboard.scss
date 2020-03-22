@@ -7,11 +7,9 @@
         font-size: $font-size + 3px;
     }
 
-    .base_input {
-        border-bottom: 2px solid $primary;
-    }
-
     .dash {
+        border: none;
+        width: 100%;
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
         transition: 0.25s ease-in;
         overflow: hidden;
