@@ -1,30 +1,31 @@
 .form-group {
-     position: relative;
-     margin: 2rem 0;
+    position: relative;
+    margin: 2rem 0;
 
-     .base_input {
-         width: 100%;
-         padding: 0.5rem 1rem;
-         border: none;
-         border-bottom: 1.5px solid $white;
-         background: inherit;
-         color: $white;
+    .base_input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-bottom: 1.5px solid $white;
+        background: inherit;
+        color: $white;
 
-         &:focus {
-             outline: none;
-         }
+        &:focus {
+            outline: none;
+        }
 
-         &:focus~label {
-             bottom: 90%;
-             font-size: $font-size - 2px;
-         }
-     }
+        &:focus ~ label,
+        &:valid ~ label {
+            bottom: 90%;
+            font-size: $font-size - 2px;
+        }
+    }
 
-     label {
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         font-size: $font-size + 2px;
-         transition: 0.25s;
-     }
+    label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: $font-size + 2px;
+        transition: 0.25s;
+    }
  }
