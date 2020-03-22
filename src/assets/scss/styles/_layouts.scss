@@ -1,4 +1,45 @@
+body {
+    overflow-x: hidden !important;
+}
+
+//app home layout
 .home_layout {
     width: 100vw;
     min-height: 100vh;
+}
+
+.dashboard,
+.tasks_view {
+    .base_input {
+        border-bottom: 2px solid $primary;
+    }
+}
+
+// tasks view 
+.tasks_view {
+    .btn-primary {
+        background-color: $primary;
+    }
+
+    .task_item {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.app_loader {
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+    .spinner {
+        width: 47px;
+        height: 47px;
+        border: 6px solid rgba(255, 255, 255, 0.5);
+        border-right-color: $primary;
+        border-radius: 50%;
+        animation: .8s spin linear;
+        animation-iteration-count: infinite;
+    }
 }
