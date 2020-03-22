@@ -1,9 +1,7 @@
 <template>
     <div class="home_layout bg_light_grey">
-        <div class="container">
-            <transition name="fade">
-                <router-view/>
-            </transition>
-        </div>
+        <transition name="fade" mode="out-in">
+            <router-view/>
+        </transition>
     </div>
 </template>
